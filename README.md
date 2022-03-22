@@ -8,6 +8,6 @@ ____
 * ***SCSS***
 * ***JS***
 
-### Structure   
+### Structure: 
 > index.html
 > > catalog.html   
