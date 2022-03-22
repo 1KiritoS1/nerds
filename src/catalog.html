@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- --- Fonts --- -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Nerds</title>
+</head>
+<body>
+<header class="header header--catalog">
+	<div class="container">
+		<div class="header__inner">
+			<a href="index.html">
+				<img src="img/logo.svg" alt="Logo">
+			</a>
+			<nav class="nav">
+				<a href="index.html#studio" class="nav__link">
+					Студия
+				</a>
+				<a href="index.html#clients" class="nav__link">
+					Клиенты
+				</a>
+				<a href="#" class="nav__link active">
+					Магазин
+				</a>
+				<a href="#contacts" class="nav__link">
+					Контакты
+				</a>
+			</nav>
+			<div class="header__burger">
+				<span></span>
+			</div>
+			<div class="storage">
+				<img src="img/header/cart.svg" alt="Cart">
+				<a href="#" class="nav__link">
+					Корзина
+				</a>
+			</div>
+		</div>
+		<h1 class="header__title title">
+			Магазин готовых шаблонов	
+		</h1>
+	</div>
+</header>
+<section class="catalog">
+	<div class="container">
+		<div class="catalog__inner">
+			<div class="catalog__filter">
+				<div class="catalog__price">
+					<h4 class="catalog__text">
+						Стоимость:
+					</h4>
+					<form class="catalog-range">
+						<div class="range__container">
+							<span class="range__bar">
+								<span class="range__fill"></span>
+							</span>
+							<input type="range" id="range" class="range__input" name="Range">
+						</div>
+					</form>
+					<form class="catalog-number">
+						<div class="catalog-number__item">
+							<label for="from" class="number__label">От</label>
+							<input type="number" class="number__input" id="from" min="0" max="15000" value="0">
+						</div>
+						<div class="catalog-number__item">
+							<label for="to" class="number__label">До</label>
+							<input type="number" class="number__input" id="to" min="0" max="15000" value="15000">
+						</div>
+					</form>
+				</div>
+				<div class="catalog__radio">
+					<h4 class="catalog__text">
+						Сетка:
+					</h4>
+					<form class="catalog-radio">
+						<div class="catalog-radio__item">
+							<input type="radio" class="radio__input" id="adaptive" name="radio" value="Adaptive">
+							<label for="adaptive" class="radio__label">Адаптивная</label>
+						</div>
+
+						<div class="catalog-radio__item">
+							<input type="radio" class="radio__input" id="fixed" name="radio" value="Fixed">
+							<label for="fixed" class="radio__label">Фиксированная</label>
+						</div>
+
+						<div class="catalog-radio__item">
+							<input type="radio" class="radio__input" id="rubber" name="radio" value="Rubber">
+							<label for="rubber" class="radio__label">Резиновая</label>
+						</div>
+					</form>
+				</div>
+				<div class="catalog__checkbox">
+					<h4 class="catalog__text">
+						Особенности:
+					</h4>
+					<form class="catalog-checkbox">
+						<div class="catalog-checkbox__item">
+							<input type="checkbox" class="checkbox__input" id="slider" name="slider" value="Slider">
+							<label for="slider" class="checkbox__label">Слайдер</label>
+						</div>
+						
+						<div class="catalog-checkbox__item">
+							<input type="checkbox" class="checkbox__input" id="block" name="block" value="Block">
+							<label for="block" class="checkbox__label">Блок преимуществ</label>
+						</div>
+
+						<div class="catalog-checkbox__item">
+							<input type="checkbox" class="checkbox__input" id="news" name="news" value="News">
+							<label for="news" class="checkbox__label">Новости</label>
+						</div>
+
+						<div class="catalog-checkbox__item">
+							<input type="checkbox" class="checkbox__input" id="gallery" name="gallery" value="Gallery">
+							<label for="gallery" class="checkbox__label">Галерея</label>
+						</div>
+
+						<div class="catalog-checkbox__item">
+							<input type="checkbox" class="checkbox__input" id="basket" name="basket" value="Basket">
+							<label for="basket" class="checkbox__label">Корзина</label>
+						</div>
+					</form>
+				</div>
+				<a href="#" class="btn-catalog">
+					Показать
+				</a>
+			</div>
+			<div class="catalog__goods">
+				<div class="catalog__header">
+					<h4 class="catalog__text">
+						Сортировать:
+					</h4>
+					<ul class="catalog__types">
+						<li class="catalog__type active">
+							<a href="#">
+								По цене
+							</a>
+						</li>
+						<li class="catalog__type">
+							<a href="#">
+								По типу
+							</a>
+						</li>
+						<li class="catalog__type">
+							<a href="#">
+								По названию
+							</a>
+						</li>
+						<div class="catalog__arrows">
+							<a href="#" class="catalog__arrow active">
+								<svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.5 0L0 10H11L5.5 0Z"/>
+								</svg>
+							</a>
+							<a href="#" class="catalog__arrow">
+								<svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.5 0L0 10H11L5.5 0Z"/>
+								</svg>
+							</a>
+						</div>
+					</ul>
+				</div>
+				<div class="catalog__items">
+					<div class="catalog__item">
+						<div class="catalog__browser">
+							<span class="catalog-cirlces"></span>
+						</div>
+						<img src="img/catalog/goods/1.jpg" alt="Goods">
+						<div class="catalog__content">
+							<h3 class="catalog__name">
+								Sedona
+							</h3>
+							<p class="catalog__info">
+								Информационный сайт для туристов
+							</p>
+							<a href="#" class="btn">
+								9 900 ₽
+							</a>
+						</div>
+					</div>
+					<div class="catalog__item">
+						<div class="catalog__browser">
+							<span class="catalog-cirlces"></span>
+						</div>
+						<img src="img/catalog/goods/2.jpg" alt="Goods">
+						<div class="catalog__content">
+							<h3 class="catalog__name">
+								Sedona
+							</h3>
+							<p class="catalog__info">
+								Информационный сайт для туристов
+							</p>
+							<a href="#" class="btn">
+								9 900 ₽
+							</a>
+						</div>
+					</div>
+					<div class="catalog__item">
+						<div class="catalog__browser">
+							<span class="catalog-cirlces"></span>
+						</div>
+						<img src="img/catalog/goods/3.jpg" alt="Goods">
+						<div class="catalog__content">
+							<h3 class="catalog__name">
+								Sedona
+							</h3>
+							<p class="catalog__info">
+								Информационный сайт для туристов
+							</p>
+							<a href="#" class="btn">
+								9 900 ₽
+							</a>
+						</div>
+					</div>
+					<div class="catalog__item">
+						<div class="catalog__browser">
+							<span class="catalog-cirlces"></span>
+						</div>
+						<img src="img/catalog/goods/4.jpg" alt="Goods">
+						<div class="catalog__content">
+							<h3 class="catalog__name">
+								Sedona
+							</h3>
+							<p class="catalog__info">
+								Информационный сайт для туристов
+							</p>
+							<a href="#" class="btn">
+								9 900 ₽
+							</a>
+						</div>
+					</div>
+					<div class="catalog__item">
+						<div class="catalog__browser">
+							<span class="catalog-cirlces"></span>
+						</div>
+						<img src="img/catalog/goods/5.jpg" alt="Goods">
+						<div class="catalog__content">
+							<h3 class="catalog__name">
+								Sedona
+							</h3>
+							<p class="catalog__info">
+								Информационный сайт для туристов
+							</p>
+							<a href="#" class="btn">
+								9 900 ₽
+							</a>
+						</div>
+					</div>
+					<div class="catalog__item">
+						<div class="catalog__browser">
+							<span class="catalog-cirlces"></span>
+						</div>
+						<img src="img/catalog/goods/6.jpg" alt="Goods">
+						<div class="catalog__content">
+							<h3 class="catalog__name">
+								Sedona
+							</h3>
+							<p class="catalog__info">
+								Информационный сайт для туристов
+							</p>
+							<a href="#" class="btn">
+								9 900 ₽
+							</a>
+						</div>
+					</div>
+				</div>
+				<ul class="pagenation">
+					<li class="page__link active">
+						<a href="#">
+							1	
+						</a>
+					</li>
+					<li class="page__link">
+						<a href="#">
+							2	
+						</a>
+					</li>
+					<li class="page__link">
+						<a href="#">
+							3	
+						</a>
+					</li>
+					<a href="#" class="btn-catalog">
+						Следующая
+					</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="location location--catalog">
+	<div class="container">
+		<div class="location__box">
+			<div class="location__inner">
+				<h3 class="location__title">
+					NЁRDS DESIGN STUDIO
+				</h3>
+				<div class="location__info">
+					<p class="location__address">
+						191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+					</p>
+					<a href="tel:+78122757575" class="location__phone">
+						тел. +7 (812) 275-75-75
+					</a>
+				</div>
+				<a href="#" class="btn btn-location">
+					Напишите нам
+				</a>
+			</div>
+		</div>
+		<img src="img/location/pin.png" alt="Pin" class="location__pin">
+	</div>
+</section>
+<footer class="footer" id="contacts">
+	<div class="container">
+		<div class="footer__inner">
+			<ul class="footer__social">
+				<li class="footer__link">
+					<a href="https://vk.com/">
+						<img src="img/social/vk.svg" alt="Vkontakte">
+					</a>
+				</li>
+				<li class="footer__link">
+					<a href="https://www.facebook.com/">
+						<img src="img/social/facebook.svg" alt="Facebook">
+					</a>
+				</li>
+				<li class="footer__link">
+					<a href="https://www.instagram.com/">
+						<img src="img/social/instagram.svg" alt="Instagram">
+					</a>
+				</li>
+			</ul>
+			<div class="footer__content">
+				<h2 class="footer__title">
+					Давайте дружить, это выгодно
+				</h2>
+				<p class="footer__text">
+					Скидка 10% для друзей из социальных сетей.
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>
