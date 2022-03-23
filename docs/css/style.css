@@ -610,7 +610,6 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  color: #000;
   background: #dbdbdb;
   transition: all 0.3s ease;
   border: 3px solid #dbdbdb;
@@ -620,6 +619,9 @@ input::-webkit-inner-spin-button {
 }
 .page__link:hover, .page__link.active {
   background: #fff;
+}
+.page__link a {
+  color: #000;
 }
 
 /* --- Media --- */
